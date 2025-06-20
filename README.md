@@ -1,19 +1,9 @@
----
-layout: archive
-title: "MOOSE"
-permalink: /MOOSE/
-author_profile: true
----
----
-## 🦌 (MOOSE) Mixture of Ordered Scoring Experts for Cross-prompt Essay Trait Scoring 🦌
 
-<div align="center" >
-This is synopsis page of <strong>Mixture of Ordered Scoring Experts for Cross-prompt Essay Trait Scoring</strong> which is accepted to ACL 2025!
-</div>
+# Mixture of Ordered Scoring Experts for Cross-prompt Essay Trait Scoring (MOOSE)
 
+
+## Model overview 
 <div align="center">
-
-  ## Model overview 
   <img src="/images/aes.png"  width="60%" height="60%"/>
 </div>
 
