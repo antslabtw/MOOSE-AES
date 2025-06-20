@@ -1,8 +1,10 @@
 
 # Mixture of Ordered Scoring Experts for Cross-prompt Essay Trait Scoring (MOOSE)
 
+This repository contains the code used to produce the results from the paper Automated Cross-prompt Scoring of Essay Traits published in [ACL 2025](https:/acl.org/moose).
 
-## Model overview 
+## Model overview
+
 <div align="center">
   <img src="/images/aes.png"  width="60%" height="60%"/>
 </div>
@@ -19,7 +21,34 @@ layer to learn non-prompt specific representation of the essay.
   <img src="/images/moose.png"  width="60%" height="60%"/>
 </div>
 
+## Package Requirements
 
+Install below packages in your virtual environment before running the code.
+- python==3.7.11
+- tensorflow=2.0.0
+- numpy=1.18.1
+- nltk=3.4.5
+- pandas=1.0.5
+- scikit-learn=0.22.1
+
+## How to Run MOOSE
+This bash script will run each model 5 times with different seeds ([12, 22, 32, 42, 52]).
+- `bash ./train_ProTACT.sh`
+
+\* Topic-coherence features are included in the `data/LDA/hand_crafted_final_{prompt}.csv` file as the 'highest_topic' column.
+
+\* Note that every run does not produce the same results due to the random elements.
+
+## Note – Handcrafted Features:
+We utilize features follow [CTS (Ridley et al,2021)](https://github.com/robert1ridley/cross-prompt-trait-scoring/tree/main). Same as (Ridley et al,2021), the handcrafted features have been precomputed and are available at data/hand_crafted_v3.csv. Additional readability-related features can be found in data/allreadability.pickle. The scripts used to generate these features are features.py and create_readability_features.py, respectively.
+
+If you wish to regenerate the features, make sure to install the following Python packages:
+
+textstat
+
+spacy (along with the English model: python -m spacy download en_core_web_sm)
+
+readability (install via: pip install https://github.com/andreasvc/readability/tarball/master)
 
 ## demo link
 * The online scoring engine is [here](https://github.com/tempxdxd)
