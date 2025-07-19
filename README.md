@@ -37,6 +37,14 @@ Training stage
 
 \* After downloading, please extract the contents of the archive to the root folder of the project.
 
+\* or you can use preprocess code which in pre_process folder and download [cross_prompt_attribute.tar.gz](https://drive.google.com/drive/folders/1JD6hj_ml1pWMi572UVa3nSje_7szMKXE) which is follow ProTACT [(Do et al.,2023)](https://aclanthology.org/2023.findings-acl.98.pdf) data partition in the pre_process folder to generate data input. 
+
+\* Note the encode.py is followed Multi-Scale-BERT-AES  [(Wang et al., 2022)](https://github.com/lingochamp/Multi-Scale-BERT-AES/blob/main/encoder.py)
+
+- `cd pre_process`
+- `python process.py`
+
+
 Inference stage
 
 - `./inference.sh`
