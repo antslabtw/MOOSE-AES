@@ -47,9 +47,9 @@ def train(
 ):
     seed_all(seed)
 
-    train_dataset = CustomDataset(f"../feacture/var_norm/new_train/encode_prompt_{test_prompt_id}.pkl")
-    eval_dataset = CustomDataset(f"../feacture/var_norm/new_dev/encode_prompt_{test_prompt_id}.pkl")
-    test_dataset = CustomDataset(f"../feacture/var_norm/new_test/encode_prompt_{test_prompt_id}.pkl")
+    train_dataset = CustomDataset(f"/feacture/var_norm/new_train/encode_prompt_{test_prompt_id}.pkl")
+    eval_dataset = CustomDataset(f"/feacture/var_norm/new_dev/encode_prompt_{test_prompt_id}.pkl")
+    test_dataset = CustomDataset(f"/feacture/var_norm/new_test/encode_prompt_{test_prompt_id}.pkl")
     model = Model(
         args=args
     )
