@@ -21,26 +21,21 @@ layer to learn non-prompt specific representation of the essay.
   <img src="/images/moose.png"  width="60%" height="60%"/>
 </div>
 
-## Package Requirements
+##Requirements
 
-Install below packages in your virtual environment before running the code.
-- python==3.7.11
-- tensorflow=2.0.0
-- numpy=1.18.1
-- nltk=3.4.5
-- pandas=1.0.5
-- scikit-learn=0.22.1
+Python version is 3.10.0 
+-`pip install -r requirement.txt`
 
 ## How to Run MOOSE
-This bash script will run each model 5 times with different seeds ([12, 22, 32, 42, 52]).
-- `bash ./train_ProTACT.sh`
 
-\* Topic-coherence features are included in the `data/LDA/hand_crafted_final_{prompt}.csv` file as the 'highest_topic' column.
+- `./run_bash.sh`
 
-\* Note that every run does not produce the same results due to the random elements.
+\* Training/ Testing/ and Validation data in 
+
+\* Creat '/feacture/var_norm/new_train/' , '/feacture/var_norm/new_test/' and '/feacture/var_norm/new_dev/' folder download the data in repesctly folder.
 
 ## Note – Handcrafted Features:
-We utilize features follow [CTS (Ridley et al,2021)](https://github.com/robert1ridley/cross-prompt-trait-scoring/tree/main). Same as (Ridley et al,2021), the handcrafted features have been precomputed and are available at data/hand_crafted_v3.csv. Additional readability-related features can be found in data/allreadability.pickle. The scripts used to generate these features are features.py and create_readability_features.py, respectively.
+We utilize features follow [CTS (Ridley et al,2021)](https://github.com/robert1ridley/cross-prompt-trait-scoring/tree/main). Same as (Ridley et al,2021), the handcrafted features have been precomputed and are available at prep_process/hand_crafted_v3.csv. Additional readability-related features can be found in pre_process/allreadability.pickle. The scripts used to generate these features are features.py and create_readability_features.py, respectively.
 
 If you wish to regenerate the features, make sure to install the following Python packages:
 
