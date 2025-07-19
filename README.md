@@ -39,7 +39,7 @@ Training stage
 
 Inference stage
 
--`./inference.sh`
+- `./inference.sh`
 
 ## Note – Handcrafted Features:
 We utilize features follow [CTS (Ridley et al,2021)](https://github.com/robert1ridley/cross-prompt-trait-scoring/tree/main). Same as (Ridley et al,2021), the handcrafted features have been precomputed and are available at prep_process/hand_crafted_v3.csv. Additional readability-related features can be found in pre_process/allreadability.pickle. The scripts used to generate these features are features.py and create_readability_features.py, respectively.
