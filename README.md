@@ -21,18 +21,19 @@ layer to learn non-prompt specific representation of the essay.
   <img src="/images/moose.png"  width="60%" height="60%"/>
 </div>
 
-##Requirements
+## Requirements
 
 Python version is 3.10.0 
+
 -`pip install -r requirement.txt`
 
 ## How to Run MOOSE
 
 - `./run_bash.sh`
 
-\* Training/ Testing/ and Validation data in 
+\* Training/ Testing/ and Validation data in [here](https://drive.google.com/file/d/1csQocg3Kf8yEKX6TUHCSKT983myiUH07/view)
 
-\* Creat '/feacture/var_norm/new_train/' , '/feacture/var_norm/new_test/' and '/feacture/var_norm/new_dev/' folder download the data in repesctly folder.
+\* After downloading, please extract the contents of the archive to the root folder of the project.
 
 ## Note – Handcrafted Features:
 We utilize features follow [CTS (Ridley et al,2021)](https://github.com/robert1ridley/cross-prompt-trait-scoring/tree/main). Same as (Ridley et al,2021), the handcrafted features have been precomputed and are available at prep_process/hand_crafted_v3.csv. Additional readability-related features can be found in pre_process/allreadability.pickle. The scripts used to generate these features are features.py and create_readability_features.py, respectively.
