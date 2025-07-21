@@ -1,11 +1,16 @@
 
 # Mixture of Ordered Scoring Experts for Cross-prompt Essay Trait Scoring (MOOSE)
 
-This repository contains the code used to produce the results from the paper Automated Cross-prompt Scoring of Essay Traits published in [ACL 2025](https:/acl.org/moose).
+* This repository contains the code used to produce the results from the paper Automated Cross-prompt Scoring of Essay Traits published in [ACL 2025](https:/acl.org/moose). The main page of Moose is [here](https://antslabtw.github.io/MOOSE/) and the online scoring engine is [here](https://github.com/antslabtw/MOOSE-AES)
+<br><br>
+* MOOSE is multi traits cross prompt essay scoring model which imitates how human raters evaluate essays. MOOSE is composed of three experts:<br>
+1) Scoring Expert: Learn essay inherent scoring cues.<br>
+2) Ranking Expert: Compare relative quality across different essays.<br>
+3) Adherence Expert: Estimate the degree of prompt adherence.<br><br>
 
 ## Model overview
-
 <div align="center">
+  <img src="/images/moose_illustration.png"  width="20%" height="20%"/>
   <img src="/images/aes.png"  width="60%" height="60%"/>
 </div>
 
@@ -60,7 +65,23 @@ spacy (along with the English model: python -m spacy download en_core_web_sm)
 
 readability (install via: pip install https://github.com/andreasvc/readability/tarball/master)
 
-## demo link
-* The online scoring engine is [here](https://github.com/tempxdxd)
 ## Citation
-To be update
+<pre style="background: #f6f8fa; padding: 16px; border-radius: 6px; overflow-x: auto;">
+<code>
+@inproceedings{pokaimooseAES2025,
+    title = "Mixture of Ordered Scoring Experts for Cross-prompt Essay Trait Scoring",
+    author = "Po-Kai Chen an
+      Bo-Wei Tsai  and
+      Kuan-Wei Shao and
+      Chien-Yao Wang and
+      Jia-Ching Wang and
+     Yi-Ting Huang",
+    booktitle = "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics",
+    month = "aug",
+    year = "2025",
+    address = "Vienna, Austria",
+    publisher = "Association for Computational Linguistics",
+    abstract = "utomated Essay Scoring (AES) plays a crucial role in language assessment. In particular, cross-prompt essay trait scoring provides learners with valuable feedback to improve their writing skills. However, due to the scarcity of prompts, most existing methods overlook critical information, such as content from prompts or essays, resulting in incomplete assessment perspectives. In this paper, we propose a robust AES framework, the Mixture of Ordered Scoring Experts (MOOSE), which integrates information from both prompts and essays. MOOSE employs three specialized experts to evaluate (1) the overall quality of an essay, (2) the relative quality across multiple essays, and (3) the relevance between an essay and its prompt. MOOSE introduces the ordered aggregation of assessment results from these experts along with effective feature learning techniques. Experimental results demonstrate that MOOSE achieves exceptionally stable and state-of-the-art performance in both cross-prompt scoring and multi-trait scoring on the ASAP++ dataset. The source code is released at https://github.com/antslabtw/MOOSE-AES"
+}
+</code>
+</pre>
