@@ -68,20 +68,12 @@ readability (install via: pip install https://github.com/andreasvc/readability/t
 ## Citation
 <pre style="background: #f6f8fa; padding: 16px; border-radius: 6px; overflow-x: auto;">
 <code>
-@inproceedings{pokaimooseAES2025,
-    title = "Mixture of Ordered Scoring Experts for Cross-prompt Essay Trait Scoring",
-    author = "Po-Kai Chen an
-      Bo-Wei Tsai  and
-      Kuan-Wei Shao and
-      Chien-Yao Wang and
-      Jia-Ching Wang and
-     Yi-Ting Huang",
-    booktitle = "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics",
-    month = "aug",
-    year = "2025",
-    address = "Vienna, Austria",
-    publisher = "Association for Computational Linguistics",
-    abstract = "utomated Essay Scoring (AES) plays a crucial role in language assessment. In particular, cross-prompt essay trait scoring provides learners with valuable feedback to improve their writing skills. However, due to the scarcity of prompts, most existing methods overlook critical information, such as content from prompts or essays, resulting in incomplete assessment perspectives. In this paper, we propose a robust AES framework, the Mixture of Ordered Scoring Experts (MOOSE), which integrates information from both prompts and essays. MOOSE employs three specialized experts to evaluate (1) the overall quality of an essay, (2) the relative quality across multiple essays, and (3) the relevance between an essay and its prompt. MOOSE introduces the ordered aggregation of assessment results from these experts along with effective feature learning techniques. Experimental results demonstrate that MOOSE achieves exceptionally stable and state-of-the-art performance in both cross-prompt scoring and multi-trait scoring on the ASAP++ dataset. The source code is released at https://github.com/antslabtw/MOOSE-AES"
+@inproceedings{chen2025mixture,
+  title={Mixture of Ordered Scoring Experts for Cross-prompt Essay Trait Scoring},
+  author={Chen, Po-Kai and Tsai, Bo-Wei and Wei, Shao Kuan and Wang, Chien-Yao and Wang, Jia-Ching and Huang, Yi-Ting},
+  booktitle={Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  pages={18071--18084},
+  year={2025}
 }
 </code>
 </pre>
