@@ -1,7 +1,7 @@
 
 # Mixture of Ordered Scoring Experts for Cross-prompt Essay Trait Scoring (MOOSE)
 
-* This repository contains the code used to produce the results from the paper Automated Cross-prompt Scoring of Essay Traits published in [ACL 2025](https:/acl.org/moose). The main page of Moose is [here](https://antslabtw.github.io/MOOSE/) and the online scoring engine is [here](https://github.com/antslabtw/MOOSE-AES)
+* This repository contains the code used to produce the results from the paper Automated Cross-prompt Scoring of Essay Traits published in [ACL 2025](https:/acl.org/moose). The main page of Moose is [here](https://antslabtw.github.io/MOOSE/) and the online scoring engine is [here](https://6efa2479184c72195b.gradio.live/)
 <br><br>
 * MOOSE is multi traits cross prompt essay scoring model which imitates how human raters evaluate essays. MOOSE is composed of three experts:<br>
 1) Scoring Expert - Learn essay inherent scoring cues.<br>
